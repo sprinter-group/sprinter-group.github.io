@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import "https://rawgithub.com/necolas/normalize.css/";
+@import "https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css";
+
+
+/* ==============================
+    normalizr css
+============================== */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+
+/* ==============================
+    scss modules
+============================== */
+@import 'modules/grid';
+@import 'modules/color';
+@import 'modules/global';
+@import 'modules/pseudo';

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import "https://rawgithub.com/necolas/normalize.css/";
+@import "https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css";
+/* ==============================
+    normalizr css
+============================== */
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5; }
+
+/* ==============================
+    scss modules
+============================== */
+/* ==============================
+  4px grid system
+============================== */
+/* ==============================
+  color stack
+============================== */
+/* ==============================
+    text rendering
+============================== */
+/* ==============================
+    mixin default font
+============================== */
+/* ==============================
+    default font-size, line-height
+============================== */
+/* ==============================
+    opacity
+============================== */
+/* ==============================
+    fonts
+============================== */
+body {
+  outline: none;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 25.6px;
+  line-height: 1.6rem;
+  font-family: 'Spoqa Han Sans', 'Source Sans Pro', 'Apple SD Gothic Neo', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif';
+  -webkit-font-family: 'Spoqa Han Sans', 'Source Sans Pro', 'Apple SD Gothic Neo', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif';
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-decoration-skip: ink;
+  color: rgba(0, 0, 0, 0.87); }
+
+/* ==============================
+    pseudo class
+============================== */
+::placeholder {
+  color: #babac0; }
+
+::selection {
+  color: #ffffff;
+  background-color: #327DE1; }
+
+img::selection {
+  visibility: hidden;
+  background: transparent; }
+
+input[type=text]::-ms-clear {
+  display: none; }
+
+select,
+button,
+input:focus {
+  outline: 0; }
+
+select::-ms-expand {
+  display: none; }
+
+button {
+  all: unset; }
+  button:hover {
+    cursor: pointer; }
