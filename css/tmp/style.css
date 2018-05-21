@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import "https://rawgithub.com/necolas/normalize.css/";
 @import "https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css";
 /* ==============================
     normalizr css
 ============================== */
