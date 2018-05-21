@@ -1,16 +1,18 @@
 @charset "UTF-8";
 @import "https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 /* ==============================
     normalizr css
 ============================== */
 html {
   box-sizing: border-box; }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit; }
+* {
+  margin: 0;
+  padding: 0; }
+  *::before, *::after {
+    box-sizing: inherit; }
 
 body {
   margin: 0;
@@ -59,6 +61,12 @@ body {
   color: rgba(0, 0, 0, 0.87); }
 
 /* ==============================
+  gpu hack
+============================== */
+/* ==============================
+    transition
+============================== */
+/* ==============================
     pseudo class
 ============================== */
 ::placeholder {
@@ -87,3 +95,50 @@ button {
   all: unset; }
   button:hover {
     cursor: pointer; }
+
+.top {
+  right: 32px;
+  bottom: 32px;
+  cursor: pointer;
+  position: fixed;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  background-color: #327DE1;
+  -webkit-border-radius: 56px;
+  -khtml-border-radius: 56px;
+  -moz-border-radius: 56px;
+  -ms-border-radius: 56px;
+  -o-border-radius: 56px;
+  border-radius: 56px;
+  -webkit-will-change: border-radius;
+  -khtml-will-change: border-radius;
+  -moz-will-change: border-radius;
+  -ms-will-change: border-radius;
+  -o-will-change: border-radius;
+  will-change: border-radius;
+  -webkit-transition: all 0.25s ease;
+  -khtml-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition; }
+  .top .fa-angle-up {
+    color: white;
+    font-size: 32px;
+    padding-top: 8px; }
+  .top:hover {
+    background-color: #2968BC; }
+
+.header {
+  top: 0;
+  width: 100vw;
+  position: fixed;
+  height: 56px;
+  border-bottom: 1px solid #e5e5e5; }

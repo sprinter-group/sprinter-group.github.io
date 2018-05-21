@@ -1,0 +1,35 @@
+/* ==============================
+  gpu hack
+============================== */
+@mixin render-hack      ($val...) {
+    -webkit-will-change: $val;
+    -khtml-will-change:  $val;
+    -moz-will-change:    $val;
+    -ms-will-change:     $val;
+    -o-will-change:      $val;
+    will-change:         $val;
+}
+  
+@mixin border-radius      ($val) {
+    -webkit-border-radius: $val;
+    -khtml-border-radius:  $val;
+    -moz-border-radius:    $val;
+    -ms-border-radius:     $val;
+    -o-border-radius:      $val;
+    border-radius:         $val;
+    @include render-hack(border-radius);
+}
+
+
+/* ==============================
+    transition
+============================== */
+@mixin transition        ($transition...) {
+      -webkit-transition: $transition;
+      -khtml-transition:  $transition;
+      -moz-transition:    $transition;
+      -ms-transition:     $transition;
+      -o-transition:      $transition;
+      transition:         $transition;
+    @include render-hack  (transition);
+}

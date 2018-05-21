@@ -1,0 +1,22 @@
+.top {
+    right: $grid8x;
+    bottom: $grid8x;
+    cursor: pointer;
+    position: fixed;
+    width: $grid14x;
+    height: $grid14x;
+    text-align: center;
+    background-color: $brand;
+    @include border-radius($grid14x);
+    @include transition(all .25s ease);
+
+    .fa-angle-up {
+        color: white;
+        font-size: $grid8x;
+        padding-top: $grid2x;
+    }
+
+    &:hover {
+        background-color: $brand-hover;
+    }
+}

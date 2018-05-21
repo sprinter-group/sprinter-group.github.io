@@ -96,3 +96,57 @@
         }
     });
 })();
+
+
+/* ==============================
+    get <i> tag -> set 'aria-hidden' attr
+============================== */
+(function(){
+    var getIcons = document.querySelectorAll("i.fa");
+    getIcons.forEach(function(iconEach)
+    {
+        var getIconAttr = iconEach.getAttribute("aria-hidden");
+        if (!getIconAttr)
+        {
+            iconEach.setAttribute("aria-hidden","true");
+        }
+    });
+})();
+
+
+/* ==============================
+    set top button
+============================== */
+(function(){
+    var getTop = document.querySelector('.top');
+    if (getTop)
+    {
+        var setIconFont = document.createElement('i');
+        setIconFont.className = 'fa fa-angle-up';
+        setIconFont.setAttribute('aria-hidden', 'true');
+
+        var setTopBtn = document.createElement('div');
+        setTopBtn.className = 'top-btn';
+        setTopBtn.setAttribute('href', '#top');
+        setTopBtn.setAttribute('onclick', 'scrollToTop();return false');
+
+        getTop.appendChild(setIconFont);
+        getTop.appendChild(setTopBtn);
+
+        getTop.setAttribute('title', 'Top');
+    }
+})();
+
+/* ==============================
+    smooth scroll
+============================== */
+(function(){
+    var timeOut;
+    function scrollToTop() {
+        if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+            window.scrollBy(0,-50);
+            timeOut=setTimeout('scrollToTop()',1);
+        }
+        else clearTimeout(timeOut);
+    }
+})();

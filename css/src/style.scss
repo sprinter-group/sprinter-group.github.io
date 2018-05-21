@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import "https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 
 
 /* ==============================
@@ -10,10 +11,13 @@ html {
     box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
+* {
+    margin: 0;
+    padding: 0;
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
 }
 
 body {
@@ -29,4 +33,9 @@ body {
 @import 'modules/grid';
 @import 'modules/color';
 @import 'modules/global';
+@import 'modules/prefix';
 @import 'modules/pseudo';
+@import 'modules/topbtn';
+
+@import 'modules/header';
+@import 'modules/footer';
