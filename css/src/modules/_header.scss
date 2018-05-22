@@ -1,9 +1,7 @@
 .header {
-    top: 0;
     width: 100vw;
     position: fixed;
     height: $grid16x;
-    padding: 0 $grid64x;
     background-color: white;
     border-bottom: 1px solid $texteee;
 
@@ -18,12 +16,11 @@
         float: right;
         height: 100%;
         width: $grid10x;
-        display: inline-flex;
 
         .fa {
+            float: right;
             margin: 0 auto;
-            align-items: center;
-            display: inline-flex;
+            margin-top: 18px;
             @extend %link-grey;
             @include font-size($grid6x);
         }

@@ -1,24 +1,67 @@
 .article {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
+    width: 100%;
+    height: 720px;
     overflow: hidden;
-    padding: $grid64x;
-    align-items: center;
+    text-align: center;
     background-color: $textf9;
 
-    .article-left {
-        width: 50%;
+    @media #{$tablet} {
+        height: 560px;
         display: inline-block;
-        vertical-align: middle;
     }
 
-    .article-right {
-        width: 50%;
+    .article-top {
+        margin: $grid28x auto;
+        margin-bottom: $grid16x;
+        display: inline-block;
+
+        h1 {
+            @include font-size($grid10x);
+            @include line-height($grid4x);
+        }
+
+        p {
+            @include font-size($grid5x);
+            @include line-height($grid5x);
+
+            b {
+                font-weight: 700;
+            }
+        }
+
+        @media #{$middle} {
+            h1 {
+                @include font-size($grid8x);
+                @include line-height($grid2x);
+            }
+
+            p {
+                @include font-size($grid4x);
+                @include line-height($grid4x);
+            }
+        }
+    }
+
+    .article-bottom {
+        width: 100%;
+        margin: 0 auto;
+        
         .mockup {
-            width: 75%;
-            float: right;
-            margin-top: 50vh;
+            width: 320px;
+        }
+
+        @media #{$tablet} {
+            .mockup {
+                width: 296px;
+                margin: 0 auto;
+            }
+        }
+
+        @media #{$pablet} {
+            .mockup {
+                width: 288px;
+                margin: 0 auto;
+            }
         }
     }
 }

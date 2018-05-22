@@ -97,3 +97,32 @@ h1 {
         color: $text333;
     }
 }
+
+
+/* ==============================
+    global wrapper
+============================== */
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+
+    @media #{$desktop} {
+        width: 768px;
+    }
+
+    @media #{$tablet} {
+        width: 520px;
+    }
+
+    @media #{$middle} {
+        width: 360px;
+    }
+
+    @media #{$mobile} {
+        width: 328px;
+    }
+
+    @media #{$mini} {
+        width: 288px;
+    }
+}
