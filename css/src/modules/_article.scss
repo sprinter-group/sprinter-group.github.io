@@ -1,7 +1,24 @@
 .article {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    overflow: hidden;
     padding: $grid64x;
-    margin-top: $grid16x;
-    background-color: black;
+    align-items: center;
+    background-color: $textf9;
+
+    .article-left {
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .article-right {
+        width: 50%;
+        .mockup {
+            width: 75%;
+            float: right;
+            margin-top: 50vh;
+        }
+    }
 }

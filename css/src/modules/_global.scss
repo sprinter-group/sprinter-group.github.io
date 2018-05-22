@@ -16,8 +16,13 @@
     mixin default font
 ============================== */
 @mixin font-stack-html() {
-            font-family: 'Spoqa Han Sans', 'Source Sans Pro', 'Apple SD Gothic Neo', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif';
-    -webkit-font-family: 'Spoqa Han Sans', 'Source Sans Pro', 'Apple SD Gothic Neo', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif';
+            font-family: 'Apple SD Gothic Neo', 'SF Pro KR', 'SF Pro Display', 'Apple Gothic', 'Spoqa Han Sans', 'Source Sans Pro', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif';
+    -webkit-font-family: 'Apple SD Gothic Neo', 'SF Pro KR', 'SF Pro Display', 'Apple Gothic', 'Spoqa Han Sans', 'Source Sans Pro', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif';
+}
+
+@mixin font-stack-en() {
+            font-family: 'SF Pro Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    -webkit-font-family: 'SF Pro Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 
@@ -59,6 +64,10 @@ body {
     @include font-stack-html();
     @include font-settings();
     color: $black78;
+
+    .en {
+        @include font-stack-en();
+    }
 }
 
 a {
@@ -69,6 +78,11 @@ a {
     &:hover {
         color: $brand-hover;
     }
+}
+
+h1 {
+    @include font-size($grid8x);
+    @include line-height($grid4x);
 }
 
 
