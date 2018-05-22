@@ -2,11 +2,11 @@
     pseudo class
 ============================== */
 ::placeholder {
-    color: $before;
+    color: $textccc;
 }
 
 ::selection {
-    color: $white;
+    color: white;
     background-color: $brand;
 }
 

@@ -2,6 +2,30 @@
     top: 0;
     width: 100vw;
     position: fixed;
-    height: $grid14x;
-    border-bottom: 1px solid $stroke;
+    height: $grid16x;
+    padding: 0 $grid8x;
+    background-color: white;
+    border-bottom: 1px solid $texteee;
+
+    .logo {
+        width: $grid10x;
+        margin-top: $grid3x;
+        align-items: center;
+        display: inline-block;
+    }
+
+    .link {
+        float: right;
+        height: 100%;
+        width: $grid10x;
+        display: inline-flex;
+
+        .fa {
+            margin: 0 auto;
+            align-items: center;
+            display: inline-flex;
+            @extend %link-grey;
+            @include font-size($grid6x);
+        }
+    }
 }

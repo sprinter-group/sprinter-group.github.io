@@ -14,6 +14,8 @@ html {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
+    
     &::before,
     &::after {
         box-sizing: inherit;
@@ -31,10 +33,12 @@ body {
     scss modules
 ============================== */
 @import 'modules/grid';
+@import 'modules/mqbp';
 @import 'modules/color';
-@import 'modules/global';
 @import 'modules/prefix';
+@import 'modules/global';
 @import 'modules/pseudo';
 @import 'modules/topbtn';
 @import 'modules/header';
+@import 'modules/article';
 @import 'modules/footer';

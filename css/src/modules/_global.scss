@@ -45,6 +45,7 @@
     opacity: $opacity;
     $opacity-ie: $opacity * 100;
     filter: alpha(opacity=$opacity-ie);
+    @include render-hack(opacity, filter);
 }
 
 
@@ -58,4 +59,27 @@ body {
     @include font-stack-html();
     @include font-settings();
     color: $black78;
+}
+
+a {
+    color: $brand;
+    text-decoration: none;
+    @include transition(color .25s ease);
+  
+    &:hover {
+        color: $brand-hover;
+    }
+}
+
+
+/* ==============================
+    button global extends
+============================== */
+%link-grey {
+    color: $text777;
+    @include transition(color .25s ease);
+    
+    &:hover {
+        color: $text333;
+    }
 }

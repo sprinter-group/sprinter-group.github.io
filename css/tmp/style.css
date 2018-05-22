@@ -10,7 +10,8 @@ html {
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: inherit; }
   *::before, *::after {
     box-sizing: inherit; }
 
@@ -26,7 +27,16 @@ body {
   4px grid system
 ============================== */
 /* ==============================
+  media query breakpoints
+============================== */
+/* ==============================
   color stack
+============================== */
+/* ==============================
+  gpu hack
+============================== */
+/* ==============================
+    transition
 ============================== */
 /* ==============================
     text rendering
@@ -60,20 +70,52 @@ body {
   -webkit-text-decoration-skip: ink;
   color: rgba(0, 0, 0, 0.87); }
 
+a {
+  color: #327DE1;
+  text-decoration: none;
+  -webkit-transition: color 0.25s ease;
+  -khtml-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+  -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition; }
+  a:hover {
+    color: #2968BC; }
+
 /* ==============================
-  gpu hack
+    button global extends
 ============================== */
-/* ==============================
-    transition
-============================== */
+.header .link .fa {
+  color: #777;
+  -webkit-transition: color 0.25s ease;
+  -khtml-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+  -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition; }
+  .header .link .fa:hover {
+    color: #333; }
+
 /* ==============================
     pseudo class
 ============================== */
 ::placeholder {
-  color: #babac0; }
+  color: #ccc; }
 
 ::selection {
-  color: #ffffff;
+  color: white;
   background-color: #327DE1; }
 
 img::selection {
@@ -131,8 +173,9 @@ button {
   will-change: transition; }
   .top .fa-angle-up {
     color: white;
+    padding-top: 8px;
     font-size: 32px;
-    padding-top: 8px; }
+    font-size: 2rem; }
   .top:hover {
     background-color: #2968BC; }
 
@@ -140,5 +183,30 @@ button {
   top: 0;
   width: 100vw;
   position: fixed;
-  height: 56px;
-  border-bottom: 1px solid #e5e5e5; }
+  height: 64px;
+  padding: 0 32px;
+  background-color: white;
+  border-bottom: 1px solid #eee; }
+  .header .logo {
+    width: 40px;
+    margin-top: 12px;
+    align-items: center;
+    display: inline-block; }
+  .header .link {
+    float: right;
+    height: 100%;
+    width: 40px;
+    display: inline-flex; }
+    .header .link .fa {
+      margin: 0 auto;
+      align-items: center;
+      display: inline-flex;
+      font-size: 24px;
+      font-size: 1.5rem; }
+
+.article {
+  width: 100vw;
+  height: 100vh;
+  padding: 256px;
+  margin-top: 64px;
+  background-color: black; }

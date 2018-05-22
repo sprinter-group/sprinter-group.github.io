@@ -12,8 +12,8 @@
 
     .fa-angle-up {
         color: white;
-        font-size: $grid8x;
         padding-top: $grid2x;
+        @include font-size($grid8x);
     }
 
     &:hover {
