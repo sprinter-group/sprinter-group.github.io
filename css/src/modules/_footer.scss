@@ -1,4 +1,38 @@
 .footer {
+    width: 100%;
+    color: $text777;
+    text-align: center;
+    padding: $grid4x 0;
     background-color: white;
-    // @extend %global-padding;
+    border-top: 1px solid $texteee;
+    
+    p,
+    a {
+        @include font-size(14px);
+        @include line-height($grid5x);
+    }
+
+    p {
+        @include font-stack-en();
+
+        &:first-child {
+            margin: $grid2x 0 0 0;
+        }
+        &:nth-child(2) {
+            margin: $grid2x 0 2px 0;
+        }
+    }
+
+    a {
+        color: $text777;
+        padding-bottom: $grid8x;
+        @include transition(color .25s ease);
+
+        &:not(:last-child):after {
+            content: " | ";
+        }
+        &:hover {
+            color: $text333;
+        }
+    }
 }

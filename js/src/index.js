@@ -145,9 +145,50 @@
     var timeOut;
     function scrollToTop() {
         if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
-            window.scrollBy(0,-50);
+            window.scrollBy(0, -50);
             timeOut=setTimeout('scrollToTop()',1);
         }
         else clearTimeout(timeOut);
     }
+})();
+
+
+/* ==============================
+    footer text def
+============================== */
+(function(){
+    var y = new Date();
+    var getYear = y.getFullYear();
+
+    var footerTextList = [
+        { text: " © " + getYear + " Sprinter" },
+        { text: "스프린터이용약관", href: "#"},
+        { text: "개인정보취급방침", href: "#"},
+    ];
+
+    var getFooterDivWrapper = document.querySelector('.footer');
+    var setFooterTag = document.createElement('div');
+    setFooterTag.className = "wrapper";
+
+    footerTextList.forEach(function(eachText){
+        if (eachText.href) {
+            var setAnchor = document.createElement("a");
+            getFooterDivWrapper.appendChild(setFooterTag);
+            setFooterTag.appendChild(setAnchor);
+    
+            var setFooterText = document.createTextNode(eachText.text);
+            setAnchor.appendChild(setFooterText);
+            setAnchor.setAttribute("href", eachText.href);
+            setAnchor.setAttribute("title", eachText.text + " (새 창)");
+            setAnchor.setAttribute("target", "_blank");
+        }
+        else {
+            var setParagraph = document.createElement("p");
+            getFooterDivWrapper.appendChild(setFooterTag);
+            setFooterTag.appendChild(setParagraph);
+    
+            var setFooterText = document.createTextNode(eachText.text);
+            setParagraph.appendChild(setFooterText);
+        }
+    });
 })();

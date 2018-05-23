@@ -100,8 +100,12 @@ h1 {
 
 
 /* ==============================
-    global wrapper
+    global container wrapper
 ============================== */
+.container {
+    width: 100%;
+}
+
 .wrapper {
     width: 960px;
     margin: 0 auto;

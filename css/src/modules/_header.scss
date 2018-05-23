@@ -1,5 +1,4 @@
 .header {
-    width: 100vw;
     position: fixed;
     height: $grid16x;
     background-color: white;
@@ -16,6 +15,7 @@
         float: right;
         height: 100%;
         width: $grid10x;
+        margin-left: $grid4x;
 
         .fa {
             float: right;
@@ -23,6 +23,11 @@
             margin-top: 18px;
             @extend %link-grey;
             @include font-size($grid6x);
+        }
+
+        .fa-behance {
+            margin-top: $grid5x;
+            @include font-size($grid5x);
         }
     }
 }
