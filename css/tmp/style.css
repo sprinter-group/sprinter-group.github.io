@@ -37,7 +37,41 @@ body {
   gpu hack
 ============================== */
 /* ==============================
+  border radius
+============================== */
+/* ==============================
     transition
+============================== */
+/* ==============================
+  transform
+============================== */
+/* ==============================
+  box-shadow
+============================== */
+/* ==============================
+  border radius
+============================== */
+/* ==============================
+    center vertically
+============================== */
+.article .wrapper .wrapper-left .text, .article .wrapper .wrapper-right img {
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -khtml-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -webkit-will-change: transform;
+  -khtml-will-change: transform;
+  -moz-will-change: transform;
+  -ms-will-change: transform;
+  -o-will-change: transform;
+  will-change: transform; }
+
+/* ==============================
+  make center
 ============================== */
 /* ==============================
     text rendering
@@ -95,6 +129,18 @@ a {
 h1 {
   font-size: 32px;
   font-size: 2rem;
+  line-height: 25.6px;
+  line-height: 1.6rem; }
+
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 51.2px;
+  line-height: 3.2rem; }
+
+p {
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 25.6px;
   line-height: 1.6rem; }
 
@@ -239,55 +285,93 @@ button {
       font-size: 20px;
       font-size: 1.25rem; }
 
-.article {
+.hero {
   height: 800px;
   overflow: hidden;
   text-align: center;
   background-color: #f9f9f9; }
   @media only screen and (max-width: 768px) {
-    .article {
+    .hero {
       height: 640px;
       display: inline-block; } }
-  .article .article-top {
+  .hero .hero-top {
     margin: 112px auto;
     margin-bottom: 64px;
     display: inline-block; }
-    .article .article-top h1 {
+    .hero .hero-top h1 {
       font-size: 40px;
       font-size: 2.5rem;
       line-height: 25.6px;
       line-height: 1.6rem; }
-    .article .article-top p {
+    .hero .hero-top p {
       font-size: 20px;
       font-size: 1.25rem;
       line-height: 32px;
       line-height: 2rem; }
-      .article .article-top p b {
+      .hero .hero-top p b {
         font-weight: 700; }
     @media only screen and (max-width: 520px) {
-      .article .article-top h1 {
+      .hero .hero-top h1 {
         font-size: 32px;
         font-size: 2rem;
         line-height: 12.8px;
         line-height: 0.8rem; }
-      .article .article-top p {
+      .hero .hero-top p {
         font-size: 16px;
         font-size: 1rem;
         line-height: 25.6px;
         line-height: 1.6rem; } }
-  .article .article-bottom {
+  .hero .hero-bottom {
     width: 100%;
     margin: 0 auto; }
-    .article .article-bottom .mockup {
+    .hero .hero-bottom .mockup {
       width: 320px; }
     @media only screen and (max-width: 768px) {
-      .article .article-bottom .mockup {
+      .hero .hero-bottom .mockup {
         width: 296px;
         margin: 0 auto; } }
     @media only screen and (max-width: 420px) {
-      .article .article-bottom .mockup {
+      .hero .hero-bottom .mockup {
         width: 288px;
         margin: 0 auto; } }
+
+.article .wrapper {
+  height: 640px; }
+  .article .wrapper .wrapper-left {
+    float: left;
+    width: 50%;
+    height: 100%; }
+  .article .wrapper .wrapper-right {
+    float: right;
+    width: 50%;
+    height: 100%; }
+    .article .wrapper .wrapper-right img {
+      float: right;
+      max-width: 240px;
+      -webkit-box-shadow: 0 8px 16px #ccc;
+      -khtml-box-shadow: 0 8px 16px #ccc;
+      -moz-box-shadow: 0 8px 16px #ccc;
+      -ms-box-shadow: 0 8px 16px #ccc;
+      -o-box-shadow: 0 8px 16px #ccc;
+      box-shadow: 0 8px 16px #ccc;
+      -webkit-will-change: box-shadow;
+      -khtml-will-change: box-shadow;
+      -moz-will-change: box-shadow;
+      -ms-will-change: box-shadow;
+      -o-will-change: box-shadow;
+      will-change: box-shadow;
+      -webkit-border-radius: 8px;
+      -khtml-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      border-radius: 8px;
+      -webkit-will-change: border-radius;
+      -khtml-will-change: border-radius;
+      -moz-will-change: border-radius;
+      -ms-will-change: border-radius;
+      -o-will-change: border-radius;
+      will-change: border-radius; }
 
 .footer {
   width: 100%;

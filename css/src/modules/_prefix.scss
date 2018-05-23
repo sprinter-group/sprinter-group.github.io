@@ -9,7 +9,11 @@
     -o-will-change:      $val;
     will-change:         $val;
 }
-  
+
+
+/* ==============================
+  border radius
+============================== */
 @mixin border-radius      ($val) {
     -webkit-border-radius: $val;
     -khtml-border-radius:  $val;
@@ -32,4 +36,68 @@
       -o-transition:      $transition;
       transition:         $transition;
     @include render-hack  (transition);
+}
+
+
+/* ==============================
+  transform
+============================== */
+@mixin transform    ($val){
+  transform:         $val;
+  -o-transform:      $val;
+  -ms-transform:     $val;
+  -moz-transform:    $val;
+  -khtml-transform:  $val;
+  -webkit-transform: $val;
+  @include render-hack(transform);
+}
+
+
+/* ==============================
+  box-shadow
+============================== */
+@mixin box-shadow         ($val:$grid2x, $val2:$grid4x, $color:$textccc){
+    -webkit-box-shadow:  0 $val $val2 $color;
+    -khtml-box-shadow:   0 $val $val2 $color;
+    -moz-box-shadow:     0 $val $val2 $color;
+    -ms-box-shadow:      0 $val $val2 $color;
+    -o-box-shadow:       0 $val $val2 $color;
+    box-shadow:          0 $val $val2 $color;
+    @include render-hack(box-shadow);
+}
+
+
+/* ==============================
+  border radius
+============================== */
+@mixin border-radius      ($val...){
+    -webkit-border-radius: $val;
+    -khtml-border-radius:  $val;
+    -moz-border-radius:    $val;
+    -ms-border-radius:     $val;
+    -o-border-radius:      $val;
+    border-radius:         $val;
+    @include render-hack(border-radius);
+}
+
+
+/* ==============================
+    center vertically
+============================== */
+%center-vertical {
+    top: 50%;
+    position: relative;
+    @include transform(translateY(-50%));
+}
+
+
+/* ==============================
+  make center
+============================== */
+%center-all {
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  @include transform(translate(-50%, -50%));
+  @include render-hack(top, left, transform, translate, margin-right);
 }

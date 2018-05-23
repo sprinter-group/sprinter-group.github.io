@@ -85,6 +85,16 @@ h1 {
     @include line-height($grid4x);
 }
 
+h3 {
+    @include font-size($grid6x);
+    @include line-height($grid8x);
+}
+
+p {
+    @include font-size($grid4x);
+    @include line-height($grid4x);
+}
+
 
 /* ==============================
     button global extends

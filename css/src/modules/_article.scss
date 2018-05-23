@@ -1,65 +1,28 @@
 .article {
-    height: 800px;
-    overflow: hidden;
-    text-align: center;
-    background-color: $textf9;
-
-    @media #{$tablet} {
+    .wrapper {
         height: 640px;
-        display: inline-block;
-    }
 
-    .article-top {
-        margin: $grid28x auto;
-        margin-bottom: $grid16x;
-        display: inline-block;
+        .wrapper-left {
+            float: left;
+            width: 50%;
+            height: 100%;
 
-        h1 {
-            @include font-size($grid10x);
-            @include line-height($grid4x);
-        }
-
-        p {
-            @include font-size($grid5x);
-            @include line-height($grid5x);
-
-            b {
-                font-weight: 700;
+            .text {
+                @extend %center-vertical;
             }
         }
 
-        @media #{$middle} {
-            h1 {
-                @include font-size($grid8x);
-                @include line-height($grid2x);
-            }
+        .wrapper-right {
+            float: right;
+            width: 50%;
+            height: 100%;
 
-            p {
-                @include font-size($grid4x);
-                @include line-height($grid4x);
-            }
-        }
-    }
-
-    .article-bottom {
-        width: 100%;
-        margin: 0 auto;
-        
-        .mockup {
-            width: 320px;
-        }
-
-        @media #{$tablet} {
-            .mockup {
-                width: 296px;
-                margin: 0 auto;
-            }
-        }
-
-        @media #{$pablet} {
-            .mockup {
-                width: 288px;
-                margin: 0 auto;
+            img {
+                float: right;
+                max-width: 240px;
+                @extend %center-vertical;
+                @include box-shadow();
+                @include border-radius($grid2x);
             }
         }
     }
