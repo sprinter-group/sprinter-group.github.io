@@ -8,13 +8,16 @@
     @include border-radius($grid2x);
 }
 
+
 section {
+    overflow: hidden;
+
     .wrapper {
         height: 640px;
 
         .wrapper-left {
-            float: left;
             width: 50%;
+            float: left;
             height: 100%;
 
             .text {
@@ -29,8 +32,8 @@ section {
         }
 
         .wrapper-right {
-            float: right;
             width: 50%;
+            float: right;
             height: 100%;
 
             img {
@@ -45,6 +48,60 @@ section {
         }
     }
 }
+
+
+@media #{$tablet} {
+    section {
+        padding-bottom: $grid16x !important;
+        
+        .wrapper {
+            height: 640px;
+            display: flex;
+            display: -ms-flexbox;
+            display: -webkit-box;
+            flex-direction: column;
+
+            .wrapper-text {
+                order: 1;
+                -ms-flex-order: 1;
+                height: $grid40x !important;
+            }
+
+            .wrapper-img {
+                order: 2;
+                -ms-flex-order: 2;
+                padding-top: $grid4x;
+                height: 480px !important;
+            }
+            
+            .wrapper-right,
+            .wrapper-left {
+                float: none;
+                width: 100%;
+
+                .img,
+                .text {
+                    float: none;
+                    width: 100%;
+                }
+
+                img {
+                    float: none;
+                    width: $grid60x;
+                    display: block;
+                    margin: 0 auto !important;
+                }
+
+                .text {
+                    padding-top: $grid16x;
+                    padding-bottom: $grid4x;
+                    text-align: center !important;
+                }
+            }
+        }
+    }
+}
+
 
 .border-bottom {
     border-bottom: 1px solid $stroke;

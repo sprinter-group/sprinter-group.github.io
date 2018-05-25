@@ -12,6 +12,7 @@
     }
 
     .last-bottom-img {
+        width: 100%;
         margin: 0 auto;
         height: $grid10x;
         margin-top: $grid12x;
@@ -25,6 +26,24 @@
             &:hover {
                 @include opacity(.5);
             }
+        }
+    }
+
+    @media #{$tablet} {
+        .wrapper {
+            height: 320px !important;
+        }
+    }
+
+    @media #{$middle} {
+        .wrapper {
+            height: 240px !important;
+        }
+    }
+
+    @media #{$mobile} {
+        .wrapper {
+            height: 240px !important;
         }
     }
 }

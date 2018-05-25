@@ -4,9 +4,11 @@ const gulp = require('gulp');
 const sass = require('gulp-sass'),
       watch = require('gulp-watch'),
       inject = require('gulp-inject'),
+      postcss = require('gulp-postcss'),
       imagemin = require('gulp-imagemin'),
       minifyjs = require('gulp-js-minify'),
       cleanCSS = require('gulp-clean-css'),
+      sourcemaps = require('gulp-sourcemaps'),
       autoprefixer = require('gulp-autoprefixer'),
       browserSync = require('browser-sync').create();
 
@@ -39,12 +41,16 @@ gulp.task('sass:watch', function () {
 });
 
 
+
 /* ==============================
     css autoprefixer & minify -> tmp to dist
 ============================== */
 gulp.task('prefix-css', function () {
     return watch('./css/tmp/*.css', { ignoreInitial: false })
-        .pipe(autoprefixer())
+        .pipe(autoprefixer({
+            browsers: ['cover 99.5%'],
+            cascade: false
+        }))
         .pipe(cleanCSS())
         .pipe(gulp.dest('./css/dist'));
 });

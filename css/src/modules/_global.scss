@@ -122,16 +122,21 @@ p {
     width: 100%;
 }
 
+
 .wrapper {
     width: 960px;
     margin: 0 auto;
 
+    @media #{$wide} {
+        width: 800px;
+    }
+
     @media #{$desktop} {
-        width: 768px;
+        width: 640px;
     }
 
     @media #{$tablet} {
-        width: 520px;
+        width: 480px;
     }
 
     @media #{$middle} {
@@ -144,5 +149,37 @@ p {
 
     @media #{$mini} {
         width: 288px;
+    }
+}
+
+
+/* ==============================
+    text size with media query
+============================== */
+%text-spec-mqbp {
+    h1 {
+        @include font-size($grid10x);
+        @include line-height($grid4x);
+    }
+
+    p {
+        @include font-size($grid5x);
+        @include line-height($grid5x);
+
+        b {
+            font-weight: 700;
+        }
+    }
+
+    @media #{$middle} {
+        h1 {
+            @include font-size($grid8x);
+            @include line-height($grid2x);
+        }
+
+        p {
+            @include font-size($grid4x);
+            @include line-height($grid4x);
+        }
     }
 }
