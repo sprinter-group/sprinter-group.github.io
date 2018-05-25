@@ -9,11 +9,6 @@
 }
 
 section {
-
-    &:not(:last-child) {
-        border-bottom: 1px solid $stroke;
-    }
-
     .wrapper {
         height: 640px;
 
@@ -49,4 +44,8 @@ section {
             }
         }
     }
+}
+
+.border-bottom {
+    border-bottom: 1px solid $stroke;
 }

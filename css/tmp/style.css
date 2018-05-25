@@ -367,9 +367,6 @@ section .wrapper .wrapper-left img, section .wrapper .wrapper-right img {
   -o-will-change: border-radius;
   will-change: border-radius; }
 
-section:not(:last-child) {
-  border-bottom: 1px solid #eee; }
-
 section .wrapper {
   height: 640px; }
   section .wrapper .wrapper-left {
@@ -388,6 +385,9 @@ section .wrapper {
       float: right; }
     section .wrapper .wrapper-right .text {
       text-align: right; }
+
+.border-bottom {
+  border-bottom: 1px solid #eee; }
 
 .last {
   text-align: center;
