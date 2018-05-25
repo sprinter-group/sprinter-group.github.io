@@ -54,7 +54,7 @@ body {
 /* ==============================
     center vertically
 ============================== */
-.article .wrapper .wrapper-left .text, .article .wrapper .wrapper-left img, .article .wrapper .wrapper-right img, .article .wrapper .wrapper-right .text {
+.article .wrapper .wrapper-left img, .article .wrapper .wrapper-right img, .article .wrapper .wrapper-left .text, .article .wrapper .wrapper-right .text {
   top: 50%;
   position: relative;
   transform: translateY(-50%);
@@ -336,6 +336,33 @@ button {
         width: 288px;
         margin: 0 auto; } }
 
+.article .wrapper .wrapper-left img, .article .wrapper .wrapper-right img {
+  max-width: 260px;
+  -webkit-box-shadow: 0 8px 16px #ccc;
+  -khtml-box-shadow: 0 8px 16px #ccc;
+  -moz-box-shadow: 0 8px 16px #ccc;
+  -ms-box-shadow: 0 8px 16px #ccc;
+  -o-box-shadow: 0 8px 16px #ccc;
+  box-shadow: 0 8px 16px #ccc;
+  -webkit-will-change: box-shadow;
+  -khtml-will-change: box-shadow;
+  -moz-will-change: box-shadow;
+  -ms-will-change: box-shadow;
+  -o-will-change: box-shadow;
+  will-change: box-shadow;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-will-change: border-radius;
+  -khtml-will-change: border-radius;
+  -moz-will-change: border-radius;
+  -ms-will-change: border-radius;
+  -o-will-change: border-radius;
+  will-change: border-radius; }
+
 .article:not(:last-child) {
   border-bottom: 1px solid #eee; }
 
@@ -346,65 +373,15 @@ button {
     width: 50%;
     height: 100%; }
     .article .wrapper .wrapper-left img {
-      float: left;
-      max-width: 240px;
-      -webkit-box-shadow: 0 8px 16px #ccc;
-      -khtml-box-shadow: 0 8px 16px #ccc;
-      -moz-box-shadow: 0 8px 16px #ccc;
-      -ms-box-shadow: 0 8px 16px #ccc;
-      -o-box-shadow: 0 8px 16px #ccc;
-      box-shadow: 0 8px 16px #ccc;
-      -webkit-will-change: box-shadow;
-      -khtml-will-change: box-shadow;
-      -moz-will-change: box-shadow;
-      -ms-will-change: box-shadow;
-      -o-will-change: box-shadow;
-      will-change: box-shadow;
-      -webkit-border-radius: 8px;
-      -khtml-border-radius: 8px;
-      -moz-border-radius: 8px;
-      -ms-border-radius: 8px;
-      -o-border-radius: 8px;
-      border-radius: 8px;
-      -webkit-will-change: border-radius;
-      -khtml-will-change: border-radius;
-      -moz-will-change: border-radius;
-      -ms-will-change: border-radius;
-      -o-will-change: border-radius;
-      will-change: border-radius; }
+      float: left; }
   .article .wrapper .wrapper-right {
     float: right;
     width: 50%;
     height: 100%; }
     .article .wrapper .wrapper-right img {
-      float: right;
-      max-width: 240px;
-      -webkit-box-shadow: 0 8px 16px #ccc;
-      -khtml-box-shadow: 0 8px 16px #ccc;
-      -moz-box-shadow: 0 8px 16px #ccc;
-      -ms-box-shadow: 0 8px 16px #ccc;
-      -o-box-shadow: 0 8px 16px #ccc;
-      box-shadow: 0 8px 16px #ccc;
-      -webkit-will-change: box-shadow;
-      -khtml-will-change: box-shadow;
-      -moz-will-change: box-shadow;
-      -ms-will-change: box-shadow;
-      -o-will-change: box-shadow;
-      will-change: box-shadow;
-      -webkit-border-radius: 8px;
-      -khtml-border-radius: 8px;
-      -moz-border-radius: 8px;
-      -ms-border-radius: 8px;
-      -o-border-radius: 8px;
-      border-radius: 8px;
-      -webkit-will-change: border-radius;
-      -khtml-will-change: border-radius;
-      -moz-will-change: border-radius;
-      -ms-will-change: border-radius;
-      -o-will-change: border-radius;
-      will-change: border-radius; }
+      float: right; }
     .article .wrapper .wrapper-right .text {
-      text-align: right !important; }
+      text-align: right; }
 
 .footer {
   width: 100%;

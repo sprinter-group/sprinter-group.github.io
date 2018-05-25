@@ -1,3 +1,10 @@
+%image-spec {
+    max-width: 260px;
+    @extend %center-vertical;
+    @include box-shadow();
+    @include border-radius($grid2x);
+}
+
 .article {
 
     &:not(:last-child) {
@@ -18,10 +25,7 @@
 
             img {
                 float: left;
-                max-width: 240px;
-                @extend %center-vertical;
-                @include box-shadow();
-                @include border-radius($grid2x);
+                @extend %image-spec;
             }
         }
 
@@ -32,15 +36,12 @@
 
             img {
                 float: right;
-                max-width: 240px;
-                @extend %center-vertical;
-                @include box-shadow();
-                @include border-radius($grid2x);
+                @extend %image-spec;
             }
 
             .text {
+                text-align: right;
                 @extend %center-vertical;
-                text-align: right !important;
             }
         }
     }
