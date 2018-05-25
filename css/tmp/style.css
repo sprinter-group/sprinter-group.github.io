@@ -200,19 +200,15 @@ p {
   color: #ccc; }
 
 ::selection {
-  background-color: transparent; }
-
-img::selection {
-  visibility: hidden;
-  background: transparent; }
-
-input[type=text]::-ms-clear {
-  display: none; }
+  background-color: transparent !important; }
 
 select,
 button,
 input:focus {
   outline: 0; }
+
+input[type=text]::-ms-clear {
+  display: none; }
 
 select::-ms-expand {
   display: none; }

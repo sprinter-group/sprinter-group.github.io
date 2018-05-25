@@ -25,10 +25,6 @@
             &:hover {
                 @include opacity(.5);
             }
-
-            // &:first-child {
-            //     padding-left: $grid2x;
-            // }
         }
     }
 }
