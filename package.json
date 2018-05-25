@@ -23,6 +23,7 @@
     "gulp": "^3.9.1"
   },
   "browserslist": [
+    "unreleased versions",
     "cover 99.5%",
     "ie 6-8"
   ],
