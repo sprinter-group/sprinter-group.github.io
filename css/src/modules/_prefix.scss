@@ -56,7 +56,7 @@
 /* ==============================
   box-shadow
 ============================== */
-@mixin box-shadow         ($val:$grid2x, $val2:$grid4x, $color:$textccc){
+@mixin box-shadow         ($val:$grid2x, $val2:$grid4x, $color:$black16){
     -webkit-box-shadow:  0 $val $val2 $color;
     -khtml-box-shadow:   0 $val $val2 $color;
     -moz-box-shadow:     0 $val $val2 $color;

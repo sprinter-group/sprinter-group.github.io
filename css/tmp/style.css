@@ -342,12 +342,12 @@ button {
 section .wrapper .wrapper-left img, section .wrapper .wrapper-right img {
   z-index: 0;
   max-width: 260px;
-  -webkit-box-shadow: 0 8px 16px #ccc;
-  -khtml-box-shadow: 0 8px 16px #ccc;
-  -moz-box-shadow: 0 8px 16px #ccc;
-  -ms-box-shadow: 0 8px 16px #ccc;
-  -o-box-shadow: 0 8px 16px #ccc;
-  box-shadow: 0 8px 16px #ccc;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+  -khtml-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+  -ms-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+  -o-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
   -webkit-will-change: box-shadow;
   -khtml-will-change: box-shadow;
   -moz-will-change: box-shadow;
