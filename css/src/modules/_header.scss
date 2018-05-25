@@ -1,8 +1,9 @@
 .header {
+    z-index: 10;
     position: fixed;
     height: $grid16x;
     background-color: white;
-    border-bottom: 1px solid $texteee;
+    border-bottom: 1px solid $stroke;
 
     .logo {
         width: $grid10x;

@@ -1,4 +1,9 @@
 .article {
+
+    &:not(:last-child) {
+        border-bottom: 1px solid $stroke;
+    }
+
     .wrapper {
         height: 640px;
 
@@ -9,6 +14,14 @@
 
             .text {
                 @extend %center-vertical;
+            }
+
+            img {
+                float: left;
+                max-width: 240px;
+                @extend %center-vertical;
+                @include box-shadow();
+                @include border-radius($grid2x);
             }
         }
 
@@ -23,6 +36,11 @@
                 @extend %center-vertical;
                 @include box-shadow();
                 @include border-radius($grid2x);
+            }
+
+            .text {
+                @extend %center-vertical;
+                text-align: right !important;
             }
         }
     }
