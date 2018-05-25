@@ -117,40 +117,40 @@
 /* ==============================
     set top button
 ============================== */
-(function(){
-    var getTop = document.querySelector('.top');
-    if (getTop)
-    {
-        var setIconFont = document.createElement('i');
-        setIconFont.className = 'fa fa-angle-up';
-        setIconFont.setAttribute('aria-hidden', 'true');
+// (function(){
+//     var getTop = document.querySelector('#topbtn');
+//     if (getTop)
+//     {
+//         var setIconFont = document.createElement('i');
+//         setIconFont.className = 'fa fa-angle-up';
+//         setIconFont.setAttribute('aria-hidden', 'true');
 
-        var setTopBtn = document.createElement('div');
-        setTopBtn.className = 'top-btn';
-        setTopBtn.setAttribute('href', '#top');
-        setTopBtn.setAttribute('onclick', 'scrollToTop();return false');
+//         var setTopBtn = document.createElement('div');
+//         setTopBtn.className = 'top-btn';
+//         setTopBtn.setAttribute('href', '#top');
+//         setTopBtn.setAttribute('onclick', 'scrollToTop();return false');
 
-        getTop.appendChild(setIconFont);
-        getTop.appendChild(setTopBtn);
+//         getTop.appendChild(setIconFont);
+//         getTop.appendChild(setTopBtn);
 
-        getTop.setAttribute('title', 'Top');
-    }
-})();
+//         getTop.setAttribute('title', 'Top');
+//     }
+// })();
 
 
 /* ==============================
     smooth scroll
 ============================== */
-(function(){
-    var timeOut;
-    function scrollToTop() {
-        if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
-            window.scrollBy(0, -50);
-            timeOut=setTimeout('scrollToTop()', 1);
-        }
-        else clearTimeout(timeOut);
-    }
-})();
+// (function(){
+//     var timeOut;
+//     function scrollToTop() {
+//         if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
+//             window.scrollBy(0, -50);
+//             timeOut=setTimeout('scrollToTop()', 1);
+//         }
+//         else clearTimeout(timeOut);
+//     }
+// })();
 
 
 /* ==============================
@@ -166,7 +166,7 @@
         { text: "개인정보취급방침", href: "#"},
     ];
 
-    var getFooterDivWrapper = document.querySelector('.footer');
+    var getFooterDivWrapper = document.querySelector('#footer');
     var setFooterTag = document.createElement('div');
     setFooterTag.className = "wrapper";
 

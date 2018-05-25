@@ -54,7 +54,7 @@ body {
 /* ==============================
     center vertically
 ============================== */
-.article .wrapper .wrapper-left img, .article .wrapper .wrapper-right img, .article .wrapper .wrapper-left .text, .article .wrapper .wrapper-right .text {
+section .wrapper .wrapper-left img, section .wrapper .wrapper-right img, section .wrapper .wrapper-left .text, section .wrapper .wrapper-right .text {
   top: 50%;
   position: relative;
   transform: translateY(-50%);
@@ -103,7 +103,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -webkit-text-decoration-skip: ink;
-  color: rgba(0, 0, 0, 0.87); }
+  color: #333; }
   body .en {
     font-family: 'SF Pro Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
     -webkit-font-family: 'SF Pro Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; }
@@ -127,12 +127,14 @@ a {
     color: #2968BC; }
 
 h1 {
+  font-weight: 700;
   font-size: 32px;
   font-size: 2rem;
   line-height: 25.6px;
   line-height: 1.6rem; }
 
 h3 {
+  font-weight: 700;
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 51.2px;
@@ -143,11 +145,13 @@ p {
   font-size: 1rem;
   line-height: 25.6px;
   line-height: 1.6rem; }
+  p b {
+    font-weight: 700; }
 
 /* ==============================
     button global extends
 ============================== */
-.header .link .fa {
+#header .link .fa {
   color: #777;
   -webkit-transition: color 0.25s ease;
   -khtml-transition: color 0.25s ease;
@@ -161,7 +165,7 @@ p {
   -ms-will-change: transition;
   -o-will-change: transition;
   will-change: transition; }
-  .header .link .fa:hover {
+  #header .link .fa:hover {
     color: #333; }
 
 /* ==============================
@@ -218,7 +222,7 @@ button {
   button:hover {
     cursor: pointer; }
 
-.top {
+#topbtn {
   right: 32px;
   bottom: 32px;
   cursor: pointer;
@@ -251,92 +255,96 @@ button {
   -ms-will-change: transition;
   -o-will-change: transition;
   will-change: transition; }
-  .top .fa-angle-up {
+  #topbtn .fa-angle-up {
     color: white;
     padding-top: 8px;
     font-size: 32px;
     font-size: 2rem; }
-  .top:hover {
+  #topbtn:hover {
     background-color: #2968BC; }
 
-.header {
+#header {
   z-index: 10;
   position: fixed;
   height: 64px;
   background-color: white;
   border-bottom: 1px solid #eee; }
-  .header .logo {
+  #header .logo {
     width: 40px;
     margin-top: 12px;
     align-items: center;
     display: inline-block; }
-  .header .link {
+  #header .link {
     float: right;
     height: 100%;
     width: 40px;
     margin-left: 16px; }
-    .header .link .fa {
+    #header .link .fa {
       float: right;
       margin: 0 auto;
       margin-top: 18px;
       font-size: 24px;
       font-size: 1.5rem; }
-    .header .link .fa-behance {
+    #header .link .fa-behance {
       margin-top: 20px;
       font-size: 20px;
       font-size: 1.25rem; }
 
-.hero {
+#hero .hero-top h1, .last .last-top h1 {
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 25.6px;
+  line-height: 1.6rem; }
+
+#hero .hero-top p, .last .last-top p {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 32px;
+  line-height: 2rem; }
+  #hero .hero-top p b, .last .last-top p b {
+    font-weight: 700; }
+
+@media only screen and (max-width: 520px) {
+  #hero .hero-top h1, .last .last-top h1 {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 12.8px;
+    line-height: 0.8rem; }
+  #hero .hero-top p, .last .last-top p {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 25.6px;
+    line-height: 1.6rem; } }
+
+#hero {
   height: 800px;
   overflow: hidden;
   text-align: center;
   background-color: #f9f9f9; }
   @media only screen and (max-width: 768px) {
-    .hero {
+    #hero {
       height: 640px;
       display: inline-block; } }
-  .hero .hero-top {
+  #hero .hero-top {
     margin: 112px auto;
     margin-bottom: 64px;
     display: inline-block; }
-    .hero .hero-top h1 {
-      font-size: 40px;
-      font-size: 2.5rem;
-      line-height: 25.6px;
-      line-height: 1.6rem; }
-    .hero .hero-top p {
-      font-size: 20px;
-      font-size: 1.25rem;
-      line-height: 32px;
-      line-height: 2rem; }
-      .hero .hero-top p b {
-        font-weight: 700; }
-    @media only screen and (max-width: 520px) {
-      .hero .hero-top h1 {
-        font-size: 32px;
-        font-size: 2rem;
-        line-height: 12.8px;
-        line-height: 0.8rem; }
-      .hero .hero-top p {
-        font-size: 16px;
-        font-size: 1rem;
-        line-height: 25.6px;
-        line-height: 1.6rem; } }
-  .hero .hero-bottom {
+  #hero .hero-bottom {
     width: 100%;
     margin: 0 auto; }
-    .hero .hero-bottom .mockup {
+    #hero .hero-bottom .mockup {
       width: 320px; }
     @media only screen and (max-width: 768px) {
-      .hero .hero-bottom .mockup {
+      #hero .hero-bottom .mockup {
         width: 296px;
         margin: 0 auto; } }
     @media only screen and (max-width: 420px) {
-      .hero .hero-bottom .mockup {
+      #hero .hero-bottom .mockup {
         width: 288px;
         margin: 0 auto; } }
 
-.article .wrapper .wrapper-left img, .article .wrapper .wrapper-right img {
+section .wrapper .wrapper-left img, section .wrapper .wrapper-right img {
+  z-index: 0;
   max-width: 260px;
   -webkit-box-shadow: 0 8px 16px #ccc;
   -khtml-box-shadow: 0 8px 16px #ccc;
@@ -363,46 +371,85 @@ button {
   -o-will-change: border-radius;
   will-change: border-radius; }
 
-.article:not(:last-child) {
+section:not(:last-child) {
   border-bottom: 1px solid #eee; }
 
-.article .wrapper {
+section .wrapper {
   height: 640px; }
-  .article .wrapper .wrapper-left {
+  section .wrapper .wrapper-left {
     float: left;
     width: 50%;
     height: 100%; }
-    .article .wrapper .wrapper-left img {
+    section .wrapper .wrapper-left .text {
+      z-index: 5; }
+    section .wrapper .wrapper-left img {
       float: left; }
-  .article .wrapper .wrapper-right {
+  section .wrapper .wrapper-right {
     float: right;
     width: 50%;
     height: 100%; }
-    .article .wrapper .wrapper-right img {
+    section .wrapper .wrapper-right img {
       float: right; }
-    .article .wrapper .wrapper-right .text {
+    section .wrapper .wrapper-right .text {
       text-align: right; }
 
-.footer {
+.last {
+  text-align: center;
+  background-color: #f9f9f9; }
+  .last .wrapper {
+    height: 360px !important;
+    padding-top: 64px; }
+  .last .last-bottom-img {
+    margin: 0 auto;
+    height: 40px;
+    margin-top: 48px;
+    display: inline-block; }
+    .last .last-bottom-img img {
+      height: 100%;
+      cursor: pointer;
+      -webkit-transition: opacity 0.25s ease;
+      -khtml-transition: opacity 0.25s ease;
+      -moz-transition: opacity 0.25s ease;
+      -ms-transition: opacity 0.25s ease;
+      -o-transition: opacity 0.25s ease;
+      transition: opacity 0.25s ease;
+      -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition; }
+      .last .last-bottom-img img:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        -webkit-will-change: opacity, filter;
+        -khtml-will-change: opacity, filter;
+        -moz-will-change: opacity, filter;
+        -ms-will-change: opacity, filter;
+        -o-will-change: opacity, filter;
+        will-change: opacity, filter; }
+
+#footer {
+  z-index: 9;
   width: 100%;
   color: #777;
   text-align: center;
-  padding: 16px 0;
+  padding: 32px 0;
   background-color: white; }
-  .footer p,
-  .footer a {
+  #footer p,
+  #footer a {
     font-size: 14px;
     font-size: 0.875rem;
     line-height: 32px;
     line-height: 2rem; }
-  .footer p {
+  #footer p {
     font-family: 'SF Pro Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
     -webkit-font-family: 'SF Pro Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; }
-    .footer p:first-child {
+    #footer p:first-child {
       margin: 8px 0 0 0; }
-    .footer p:nth-child(2) {
+    #footer p:nth-child(2) {
       margin: 8px 0 2px 0; }
-  .footer a {
+  #footer a {
     color: #777;
     padding-bottom: 32px;
     -webkit-transition: color 0.25s ease;
@@ -417,7 +464,7 @@ button {
     -ms-will-change: transition;
     -o-will-change: transition;
     will-change: transition; }
-    .footer a:not(:last-child):after {
+    #footer a:not(:last-child):after {
       content: " | "; }
-    .footer a:hover {
+    #footer a:hover {
       color: #333; }

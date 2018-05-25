@@ -1,4 +1,33 @@
-.hero {
+%text-spec-mqbp {
+    h1 {
+        @include font-size($grid10x);
+        @include line-height($grid4x);
+    }
+
+    p {
+        @include font-size($grid5x);
+        @include line-height($grid5x);
+
+        b {
+            font-weight: 700;
+        }
+    }
+
+    @media #{$middle} {
+        h1 {
+            @include font-size($grid8x);
+            @include line-height($grid2x);
+        }
+
+        p {
+            @include font-size($grid4x);
+            @include line-height($grid4x);
+        }
+    }
+}
+
+
+#hero {
     height: 800px;
     overflow: hidden;
     text-align: center;
@@ -13,32 +42,7 @@
         margin: $grid28x auto;
         margin-bottom: $grid16x;
         display: inline-block;
-
-        h1 {
-            @include font-size($grid10x);
-            @include line-height($grid4x);
-        }
-
-        p {
-            @include font-size($grid5x);
-            @include line-height($grid5x);
-
-            b {
-                font-weight: 700;
-            }
-        }
-
-        @media #{$middle} {
-            h1 {
-                @include font-size($grid8x);
-                @include line-height($grid2x);
-            }
-
-            p {
-                @include font-size($grid4x);
-                @include line-height($grid4x);
-            }
-        }
+        @extend %text-spec-mqbp;
     }
 
     .hero-bottom {
@@ -47,6 +51,7 @@
         
         .mockup {
             width: 320px;
+            // TODO: 배경 없는 png 로 다시 뽑아서 @include box-shadow(); 적용
         }
 
         @media #{$tablet} {

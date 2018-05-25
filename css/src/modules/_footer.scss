@@ -1,10 +1,10 @@
-.footer {
+#footer {
+    z-index: 9;
     width: 100%;
     color: $text777;
     text-align: center;
-    padding: $grid4x 0;
+    padding: $grid8x 0;
     background-color: white;
-    // border-top: 1px solid $stroke;
     
     p,
     a {

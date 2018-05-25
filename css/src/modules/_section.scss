@@ -1,11 +1,14 @@
 %image-spec {
+    z-index: 0;
     max-width: 260px;
+    
+    // _prefix.scss
     @extend %center-vertical;
     @include box-shadow();
     @include border-radius($grid2x);
 }
 
-.article {
+section {
 
     &:not(:last-child) {
         border-bottom: 1px solid $stroke;
@@ -20,6 +23,7 @@
             height: 100%;
 
             .text {
+                z-index: 5;
                 @extend %center-vertical;
             }
 

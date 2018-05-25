@@ -63,7 +63,7 @@ body {
     @include line-height(16px);
     @include font-stack-html();
     @include font-settings();
-    color: $black78;
+    color: $text333;
 
     .en {
         @include font-stack-en();
@@ -81,11 +81,13 @@ a {
 }
 
 h1 {
+    font-weight: 700;
     @include font-size($grid8x);
     @include line-height($grid4x);
 }
 
 h3 {
+    font-weight: 700;
     @include font-size($grid6x);
     @include line-height($grid8x);
 }
@@ -93,6 +95,10 @@ h3 {
 p {
     @include font-size($grid4x);
     @include line-height($grid4x);
+
+    b {
+        font-weight: 700;
+    }
 }
 
 
