@@ -20,9 +20,17 @@
     -webkit-font-family: 'Apple SD Gothic Neo', 'SF Pro KR', 'SF Pro Display', 'Apple Gothic', 'Spoqa Han Sans', 'Source Sans Pro', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif';
 }
 
+
+/** Bold */
+@font-face {
+    font-family: "SF Display";
+    font-weight: 700;
+    src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+}
+
 @mixin font-stack-en() {
-            font-family: 'SF Pro Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
-    -webkit-font-family: 'SF Pro Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+            font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    -webkit-font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 

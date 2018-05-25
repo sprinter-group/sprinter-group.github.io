@@ -77,6 +77,12 @@ section .wrapper .wrapper-left img, section .wrapper .wrapper-right img, section
 /* ==============================
     mixin default font
 ============================== */
+/** Bold */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf"); }
+
 /* ==============================
     default font-size, line-height
 ============================== */
@@ -103,8 +109,8 @@ body {
   -webkit-text-decoration-skip: ink;
   color: #333; }
   body .en {
-    font-family: 'SF Pro Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
-    -webkit-font-family: 'SF Pro Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; }
+    font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    -webkit-font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; }
 
 a {
   color: #327DE1;
@@ -495,8 +501,8 @@ section {
     line-height: 32px;
     line-height: 2rem; }
   #footer p {
-    font-family: 'SF Pro Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
-    -webkit-font-family: 'SF Pro Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; }
+    font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    -webkit-font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; }
     #footer p:first-child {
       margin: 8px 0 0 0; }
     #footer p:nth-child(2) {
