@@ -5,10 +5,12 @@
     .wrapper {
         height: 360px !important;
         padding-top: $grid16x;
+        @include transition(all .5s ease);
     }
 
     .last-top {
         @extend %text-spec-mqbp;
+        @include transition(all .5s ease);
     }
 
     .last-bottom-img {
@@ -17,6 +19,7 @@
         height: $grid10x;
         margin-top: $grid12x;
         display: inline-block;
+        @include transition(all .5s ease);
 
         img {
             height: 100%;

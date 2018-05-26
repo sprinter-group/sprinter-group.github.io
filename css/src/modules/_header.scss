@@ -4,12 +4,14 @@
     height: $grid16x;
     background-color: white;
     border-bottom: 1px solid $stroke;
+    @include transition(all .5s ease);
 
     .logo {
         width: $grid10x;
         margin-top: $grid3x;
         align-items: center;
         display: inline-block;
+        @include transition(all .5s ease);
     }
 
     .link {
@@ -17,6 +19,7 @@
         height: 100%;
         width: $grid10x;
         margin-left: $grid4x;
+        @include transition(all .5s ease);
 
         .fa {
             float: right;
@@ -24,11 +27,38 @@
             margin-top: 18px;
             @extend %link-grey;
             @include font-size($grid6x);
+            @include transition(all .5s ease);
         }
 
         .fa-behance {
             margin-top: $grid5x;
             @include font-size($grid5x);
+            @include transition(all .5s ease);
+        }
+    }
+}
+
+
+@media #{$middle} {
+    #header{
+        height: $grid12x;
+
+        .logo {
+            width: $grid8x;
+            margin-top: $grid2x;
+        }
+
+        .link {
+            width: $grid8x;
+            margin-left: $grid4x;
+    
+            .fa {
+                margin-top: $grid3x;
+            }
+    
+            .fa-behance {
+                margin-top: 14px;
+            }
         }
     }
 }

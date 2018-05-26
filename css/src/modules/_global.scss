@@ -23,7 +23,7 @@
 
 /** Bold */
 @font-face {
-    font-family: "SF Display";
+    font-family: 'SF Display';
     font-weight: 700;
     src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
 }
@@ -128,12 +128,14 @@ p {
 ============================== */
 .container {
     width: 100%;
+    @include transition(all .5s ease);
 }
 
 
 .wrapper {
     width: 960px;
     margin: 0 auto;
+    @include transition(all .5s ease);
 
     @media #{$wide} {
         width: 800px;
@@ -168,14 +170,17 @@ p {
     h1 {
         @include font-size($grid10x);
         @include line-height($grid4x);
+        @include transition(all .5s ease);
     }
 
     p {
         @include font-size($grid5x);
         @include line-height($grid5x);
+        @include transition(all .5s ease);
 
         b {
             font-weight: 700;
+            @include transition(all .5s ease);
         }
     }
 

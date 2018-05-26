@@ -6,14 +6,17 @@
     @extend %center-vertical;
     @include box-shadow();
     @include border-radius($grid2x);
+    @include transition(all .5s ease);
 }
 
 
 section {
     overflow: hidden;
+    @include transition(all .5s ease);
 
     .wrapper {
         height: 640px;
+        @include transition(all .5s ease);
 
         .wrapper-left {
             width: 50%;
@@ -23,11 +26,13 @@ section {
             .text {
                 z-index: 5;
                 @extend %center-vertical;
+                @include transition(all .5s ease);
             }
 
             img {
                 float: left;
                 @extend %image-spec;
+                @include transition(all .5s ease);
             }
         }
 
@@ -39,11 +44,13 @@ section {
             img {
                 float: right;
                 @extend %image-spec;
+                @include transition(all .5s ease);
             }
 
             .text {
                 text-align: right;
                 @extend %center-vertical;
+                @include transition(all .5s ease);
             }
         }
     }

@@ -79,7 +79,7 @@ section .wrapper .wrapper-left img, section .wrapper .wrapper-right img, section
 ============================== */
 /** Bold */
 @font-face {
-  font-family: "SF Display";
+  font-family: 'SF Display';
   font-weight: 700;
   src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf"); }
 
@@ -176,11 +176,35 @@ p {
     global container wrapper
 ============================== */
 .container {
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  -khtml-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition; }
 
 .wrapper {
   width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-transition: all 0.5s ease;
+  -khtml-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition; }
   @media only screen and (max-width: 1280px) {
     .wrapper {
       width: 800px; } }
@@ -207,15 +231,51 @@ p {
   font-size: 40px;
   font-size: 2.5rem;
   line-height: 25.6px;
-  line-height: 1.6rem; }
+  line-height: 1.6rem;
+  -webkit-transition: all 0.5s ease;
+  -khtml-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition; }
 
 #hero .hero-top p, .last .last-top p {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 32px;
-  line-height: 2rem; }
+  line-height: 2rem;
+  -webkit-transition: all 0.5s ease;
+  -khtml-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition; }
   #hero .hero-top p b, .last .last-top p b {
-    font-weight: 700; }
+    font-weight: 700;
+    -webkit-transition: all 0.5s ease;
+    -khtml-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-will-change: transition;
+    -khtml-will-change: transition;
+    -moz-will-change: transition;
+    -ms-will-change: transition;
+    -o-will-change: transition;
+    will-change: transition; }
 
 @media only screen and (max-width: 520px) {
   #hero .hero-top h1, .last .last-top h1 {
@@ -300,33 +360,119 @@ button {
   position: fixed;
   height: 64px;
   background-color: white;
-  border-bottom: 1px solid #eee; }
+  border-bottom: 1px solid #eee;
+  -webkit-transition: all 0.5s ease;
+  -khtml-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition; }
   #header .logo {
     width: 40px;
     margin-top: 12px;
     align-items: center;
-    display: inline-block; }
+    display: inline-block;
+    -webkit-transition: all 0.5s ease;
+    -khtml-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-will-change: transition;
+    -khtml-will-change: transition;
+    -moz-will-change: transition;
+    -ms-will-change: transition;
+    -o-will-change: transition;
+    will-change: transition; }
   #header .link {
     float: right;
     height: 100%;
     width: 40px;
-    margin-left: 16px; }
+    margin-left: 16px;
+    -webkit-transition: all 0.5s ease;
+    -khtml-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-will-change: transition;
+    -khtml-will-change: transition;
+    -moz-will-change: transition;
+    -ms-will-change: transition;
+    -o-will-change: transition;
+    will-change: transition; }
     #header .link .fa {
       float: right;
       margin: 0 auto;
       margin-top: 18px;
       font-size: 24px;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      -webkit-transition: all 0.5s ease;
+      -khtml-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition; }
     #header .link .fa-behance {
       margin-top: 20px;
       font-size: 20px;
-      font-size: 1.25rem; }
+      font-size: 1.25rem;
+      -webkit-transition: all 0.5s ease;
+      -khtml-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition; }
+
+@media only screen and (max-width: 520px) {
+  #header {
+    height: 48px; }
+    #header .logo {
+      width: 32px;
+      margin-top: 8px; }
+    #header .link {
+      width: 32px;
+      margin-left: 16px; }
+      #header .link .fa {
+        margin-top: 12px; }
+      #header .link .fa-behance {
+        margin-top: 14px; } }
 
 #hero {
   height: 800px;
   overflow: hidden;
   text-align: center;
-  background-color: #f9f9f9; }
+  background-color: #f9f9f9;
+  -webkit-transition: all 0.5s ease;
+  -khtml-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition; }
   @media only screen and (max-width: 768px) {
     #hero {
       height: 640px;
@@ -375,28 +521,112 @@ section .wrapper .wrapper-left img, section .wrapper .wrapper-right img {
   -moz-will-change: border-radius;
   -ms-will-change: border-radius;
   -o-will-change: border-radius;
-  will-change: border-radius; }
+  will-change: border-radius;
+  -webkit-transition: all 0.5s ease;
+  -khtml-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition; }
 
 section {
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  -khtml-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition; }
   section .wrapper {
-    height: 640px; }
+    height: 640px;
+    -webkit-transition: all 0.5s ease;
+    -khtml-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-will-change: transition;
+    -khtml-will-change: transition;
+    -moz-will-change: transition;
+    -ms-will-change: transition;
+    -o-will-change: transition;
+    will-change: transition; }
     section .wrapper .wrapper-left {
       width: 50%;
       float: left;
       height: 100%; }
       section .wrapper .wrapper-left .text {
-        z-index: 5; }
+        z-index: 5;
+        -webkit-transition: all 0.5s ease;
+        -khtml-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition; }
       section .wrapper .wrapper-left img {
-        float: left; }
+        float: left;
+        -webkit-transition: all 0.5s ease;
+        -khtml-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition; }
     section .wrapper .wrapper-right {
       width: 50%;
       float: right;
       height: 100%; }
       section .wrapper .wrapper-right img {
-        float: right; }
+        float: right;
+        -webkit-transition: all 0.5s ease;
+        -khtml-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition; }
       section .wrapper .wrapper-right .text {
-        text-align: right; }
+        text-align: right;
+        -webkit-transition: all 0.5s ease;
+        -khtml-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition; }
 
 @media only screen and (max-width: 768px) {
   section {
@@ -446,13 +676,50 @@ section {
   background-color: #f9f9f9; }
   .last .wrapper {
     height: 360px !important;
-    padding-top: 64px; }
+    padding-top: 64px;
+    -webkit-transition: all 0.5s ease;
+    -khtml-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-will-change: transition;
+    -khtml-will-change: transition;
+    -moz-will-change: transition;
+    -ms-will-change: transition;
+    -o-will-change: transition;
+    will-change: transition; }
+  .last .last-top {
+    -webkit-transition: all 0.5s ease;
+    -khtml-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-will-change: transition;
+    -khtml-will-change: transition;
+    -moz-will-change: transition;
+    -ms-will-change: transition;
+    -o-will-change: transition;
+    will-change: transition; }
   .last .last-bottom-img {
     width: 100%;
     margin: 0 auto;
     height: 40px;
     margin-top: 48px;
-    display: inline-block; }
+    display: inline-block;
+    -webkit-transition: all 0.5s ease;
+    -khtml-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-will-change: transition;
+    -khtml-will-change: transition;
+    -moz-will-change: transition;
+    -ms-will-change: transition;
+    -o-will-change: transition;
+    will-change: transition; }
     .last .last-bottom-img img {
       height: 100%;
       cursor: pointer;
@@ -501,6 +768,7 @@ section {
     line-height: 32px;
     line-height: 2rem; }
   #footer p {
+    font-weight: 700;
     font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
     -webkit-font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; }
     #footer p:first-child {
