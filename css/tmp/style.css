@@ -463,7 +463,7 @@ button {
   will-change: transition; }
   @media only screen and (max-width: 768px) {
     #hero {
-      height: 640px;
+      height: 720px;
       display: inline-block; } }
   #hero .hero-top {
     margin: 112px auto;
@@ -481,6 +481,10 @@ button {
     @media only screen and (max-width: 420px) {
       #hero .hero-bottom .mockup {
         width: 288px;
+        margin: 0 auto; } }
+    @media only screen and (max-width: 360px) {
+      #hero .hero-bottom .mockup {
+        width: 260px;
         margin: 0 auto; } }
 
 section .wrapper .wrapper-left img, section .wrapper .wrapper-right img {
