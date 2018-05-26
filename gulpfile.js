@@ -1,16 +1,15 @@
 "use strict";
-const gulp = require('gulp');
-
-const sass = require('gulp-sass'),
-      watch = require('gulp-watch'),
-      inject = require('gulp-inject'),
-      postcss = require('gulp-postcss'),
-      imagemin = require('gulp-imagemin'),
-      minifyjs = require('gulp-js-minify'),
-      cleanCSS = require('gulp-clean-css'),
-      sourcemaps = require('gulp-sourcemaps'),
-      autoprefixer = require('gulp-autoprefixer'),
-      browserSync = require('browser-sync').create();
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    watch = require('gulp-watch'),
+    inject = require('gulp-inject'),
+    postcss = require('gulp-postcss'),
+    imagemin = require('gulp-imagemin'),
+    minifyjs = require('gulp-js-minify'),
+    cleanCSS = require('gulp-clean-css'),
+    sourcemaps = require('gulp-sourcemaps'),
+    autoprefixer = require('gulp-autoprefixer'),
+    browserSync = require('browser-sync').create();
 
 
 /* ==============================
@@ -39,7 +38,6 @@ gulp.task('sass', function () {
 gulp.task('sass:watch', function () {
     gulp.watch('./css/src/*.scss', ['sass']);
 });
-
 
 
 /* ==============================
@@ -84,8 +82,8 @@ gulp.task('img-resize', () =>
     inject assets
 ============================== */
 gulp.task('inject', function () {
-    let target = gulp.src('./index.html');
-    let sources = gulp.src(['./js/dist/*.js', './css/dist/style.css'], {read: false});
+    var target = gulp.src('./index.html');
+    var sources = gulp.src(['./js/dist/*.js', './css/dist/style.css'], {read: false});
 
     return target.pipe(inject(sources))
         .pipe(gulp.dest('./'))

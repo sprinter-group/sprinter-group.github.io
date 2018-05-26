@@ -13,7 +13,6 @@
     }
 
     p {
-        font-weight: 700;
         @include font-stack-en();
 
         &:first-child {

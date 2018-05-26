@@ -760,7 +760,6 @@ section {
     line-height: 32px;
     line-height: 2rem; }
   #footer p {
-    font-weight: 700;
     font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
     -webkit-font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; }
     #footer p:first-child {

@@ -1,8 +1,6 @@
 %image-spec {
     z-index: 0;
     max-width: 260px;
-    
-    // _prefix.scss
     @extend %center-vertical;
     @include box-shadow();
     @include border-radius($grid2x);

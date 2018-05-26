@@ -14,8 +14,6 @@
         margin: $grid28x auto;
         margin-bottom: $grid16x;
         display: inline-block;
-
-        // _global.scss
         @extend %text-spec-mqbp;
     }
 
@@ -25,7 +23,6 @@
         
         .mockup {
             width: 340px;
-            // TODO: 배경 없는 png 로 다시 뽑아서 @include box-shadow(); 적용
         }
 
         @media #{$tablet} {
