@@ -263,19 +263,7 @@ p {
   -o-will-change: transition;
   will-change: transition; }
   #hero .hero-top p b, .last .last-top p b {
-    font-weight: 700;
-    -webkit-transition: all 0.5s ease;
-    -khtml-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    -webkit-will-change: transition;
-    -khtml-will-change: transition;
-    -moz-will-change: transition;
-    -ms-will-change: transition;
-    -o-will-change: transition;
-    will-change: transition; }
+    font-weight: 700; }
 
 @media only screen and (max-width: 520px) {
   #hero .hero-top h1, .last .last-top h1 {
