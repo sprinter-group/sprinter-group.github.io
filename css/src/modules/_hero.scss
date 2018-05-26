@@ -24,27 +24,27 @@
         margin: 0 auto;
         
         .mockup {
-            width: 320px;
+            width: 340px;
             // TODO: 배경 없는 png 로 다시 뽑아서 @include box-shadow(); 적용
         }
 
         @media #{$tablet} {
             .mockup {
-                width: 296px;
+                width: 320px;
                 margin: 0 auto;
             }
         }
 
         @media #{$pablet} {
             .mockup {
-                width: 288px;
+                width: 296px;
                 margin: 0 auto;
             }
         }
 
         @media #{$mobile} {
             .mockup {
-                width: 260px;
+                width: 288px;
                 margin: 0 auto;
             }
         }

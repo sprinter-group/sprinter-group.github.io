@@ -473,18 +473,18 @@ button {
     width: 100%;
     margin: 0 auto; }
     #hero .hero-bottom .mockup {
-      width: 320px; }
+      width: 340px; }
     @media only screen and (max-width: 768px) {
       #hero .hero-bottom .mockup {
-        width: 296px;
+        width: 320px;
         margin: 0 auto; } }
     @media only screen and (max-width: 420px) {
       #hero .hero-bottom .mockup {
-        width: 288px;
+        width: 296px;
         margin: 0 auto; } }
     @media only screen and (max-width: 360px) {
       #hero .hero-bottom .mockup {
-        width: 260px;
+        width: 288px;
         margin: 0 auto; } }
 
 section .wrapper .wrapper-left img, section .wrapper .wrapper-right img {
