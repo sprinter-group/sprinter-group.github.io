@@ -17,6 +17,13 @@ var gulp = require('gulp'),
 ============================== */
 gulp.task('browser-sync', function() {
     browserSync.init(['*'], {
+        files: [
+            './*',
+            './**/*',
+            './html/*',
+            './images/dist/*',
+            './css/src/modules/*'
+        ],
         server: {
             baseDir: "./"
         }

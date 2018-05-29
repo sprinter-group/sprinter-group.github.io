@@ -162,8 +162,8 @@
 
     var footerTextList = [
         { text: " © " + getYear + " Sprinter" },
-        { text: "스프린터이용약관", href: "#"},
-        { text: "개인정보취급방침", href: "#"},
+        { text: "스프린터이용약관", href: "/html/terms.html"},
+        { text: "개인정보취급방침", href: "/html/privacy.html"},
     ];
 
     var getFooterDivWrapper = document.querySelector('#footer');
